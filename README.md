@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Security Tools Collection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a collection of small, security-focused projects built with **React** and **JavaScript**.  
+The projects demonstrate my interest in cybersecurity and my ability to implement secure design practices in modern applications.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Projects
 
-### `npm start`
+### 1. Password Strength Checker
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A tool to evaluate password strength in real time.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Live input field with dynamic strength meter.
+- Rules enforced:
+  - Minimum length of 8 characters
+  - At least one uppercase letter
+  - At least one number
+  - At least one special character
+- Visual indicator of strength (Weak → Moderate → Strong).
 
-### `npm test`
+_Screenshot:_  
+![Password Checker Demo](./assets/strong_pwd.png.png) (./assets/moderate_pwd.png) (./assets/weak_pwd.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 2. Secure Notes Application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A secure note-taking application with client-side encryption.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Notes are encrypted using AES before being stored in localStorage.
+- A master key is required to unlock and decrypt notes.
+- Functionality includes adding, viewing, and deleting secure notes.
+- Demonstrates secure handling of sensitive data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_Screenshot:_  
+![Secure Notes Demo](./assets/master_key_auth.png)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Upcoming Additions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Planned projects to expand this repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Phishing Website Detector – Identify suspicious URLs using rule-based checks.
+- Bug Tracker Dashboard – A platform for managing vulnerabilities and bug reports.
+- Custom Vulnerability Scanner (Work in Progress) – CLI and web-based tool for scanning open ports, weak passwords, and insecure configurations.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React – Frontend framework
+- Tailwind CSS – Styling
+- CryptoJS – AES encryption library
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clone the repository and install dependencies:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/mahaL1974/security-tools-basics.git
+cd security-tools-collection
+npm install
+npm start
+```
