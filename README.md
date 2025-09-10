@@ -20,7 +20,7 @@ A tool to evaluate password strength in real time.
 - Visual indicator of strength (Weak → Moderate → Strong).
 
 _Screenshot:_  
-![Password Checker Demo](./assets/strong_pwd.png.png) (./assets/moderate_pwd.png) (./assets/weak_pwd.png)
+![Password Checker Demo] (./assets/strong_pwd.png) (./assets/moderate_pwd.png) (./assets/weak_pwd.png)
 
 ---
 
